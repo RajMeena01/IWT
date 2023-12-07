@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background: rgb(249, 250, 251);
+}
+header .logo img{
+    width: 80px;
+}
+
+header .navbar{
+    display: flex;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+.navbar a::after{
+    content: '';
+    background: rgb(255, 165, 0);
+    width: 0%;
+    height: 3px;
+    bottom: -4px;
+    position: absolute;
+    transition: 0.5;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+
+
+header .header-btn{
+    display: flex;
+    gap: 1.5rem;
+    border-radius: 0.5rem;
+    color: #eee; 
+}
+.sign-in{
+    background: rgb(83, 160, 248);
+    color: #eeefee;
+    border-radius: 0.5rem;
+    padding: 5px;
+}
+.sign-up{
+    background: rgb(83, 160, 248);
+    color: #eeefee;
+    border-radius: 0.5rem;
+    padding: 5px;
+}
+.sign-in:hover{
+    background: rgb(255, 165, 0);
+}
+.sign-up:hover{
+    background: rgb(255, 165, 0);
+}
+
+
+
+
+.download{
+    display: flex;
+    gap: 1.5rem;
+    border-radius: 0.5rem;
+    color: #eee; 
+}
+
+.git-hub{
+    background: rgb(83, 160, 248);
+    color: #eeefee;
+    border-radius: 0.5rem;
+    padding: 5px;
+}
+.resume{
+    background: rgb(83, 160, 248);
+    color: #eeefee;
+    border-radius: 0.5rem;
+    padding: 5px;
+}
+.git-hub:hover{
+    background: rgb(255, 165, 0);
+}
+.resume:hover{
+    background: rgb(255, 165, 0);
+}

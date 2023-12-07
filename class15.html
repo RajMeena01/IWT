@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="class15.css">
+    <title>Class 15</title>
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration</h2>
+        <form id="registrationForm" onsubmit="validateForm(); return false;">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div id="passwordError" class="error"></div>
+
+            <label for="phoneNumber">Phone Number: </label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            <div id="phoneNumberError" class="error"></div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="class15.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division</title>
+    <style>
+        body{
+            height: 5000px;
+        }
+        container{
+            display: flex;
+            gap: 20px;
+            /* justify-content: center; */
+        }
+        .box1{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(230, 0, 255);
+            border: 2px solid black;
+            position: absolute;
+            top: 500px;
+        }
+        .box2{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(39, 181, 31);
+            border: 2px solid black;
+            position: relative;
+            left: 800px;
+        }
+
+        .box3{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(255, 71, 10);
+            border: 2px solid black;
+            position: fixed;
+        }
+
+        .box4{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(0, 153, 255);
+            border: 2px solid black;
+            position: static;
+            right: 500px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+   <container>
+    <div class="box1">Absolute</div>
+    <div class="box2">Relative</div>
+    <div class="box3">Fixed</div>
+    <div class="box4">Static</div>
+   </container>
+</body>
+</html>
